@@ -1,0 +1,120 @@
+SubStation Alpha
+From Wikipedia, the free encyclopedia
+Jump to: navigation, search
+ This article may require copy-editing for grammar, style, cohesion, tone or spelling. You can assist by editing it now. A how-to guide is available. (August 2008) 
+SubStation Alpha Filename extension .ssa, .ass 
+SubStation Alpha (or Sub Station Alpha), abbreviated SSA, is a subtitle file format created by Kotus that allows for more advanced subtitles than the conventional SRT and similar formats. This format can be rendered with VSFilter in conjunction with a DirectShow-aware video player (on Microsoft Windows), or MPlayer with the SSA/ASS library.
+
+It is also the name of the popular, now discontinued, tool used to edit the subtitles. See below for more on SSA/ASS subtitle editors.
+
+This subtitle format is frequently used in anime fansubs, either to overlay subtitles onto video while it is being encoded (hardsubbing), or to store subtitle data alongside video data in a Matroska (MKV) container (softsubbing). Hardsubbing is irreversible but does not require VSFilter or other special resources for playback. Softsubbing allows the end user to choose whether subtitles will be displayed, and makes it possible to include multiple subtitle streams in the same video file.
+
+Contents [hide]
+1 Principal sections in an SSA subtitle 
+2 Advanced SubStation Alpha 
+3 Editing programs 
+4 External links 
+ 
+
+
+[edit] Principal sections in an SSA subtitle
+The most basic SSA subtitle is one like this (modified version from an original script):
+
+[Script Info]
+; This is a Sub Station Alpha v4 script.
+; For Sub Station Alpha info and downloads,
+; go to http://www.eswat.demon.co.uk/
+; or email kotus@eswat.demon.co.uk
+Title: Neon Genesis Evangelion - Episode 26 (neutral Spanish)
+Original Script: RoRo
+Script Updated By: version 2.8.01
+ScriptType: v4.00
+Collisions: Normal
+PlayResY: 600
+PlayDepth: 0
+Timer: 100,0000
+ 
+[V4 Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, TertiaryColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, 
+   Alignment, MarginL, MarginR, MarginV, AlphaLevel, Encoding
+Style: DefaultVCD, Arial,28,11861244,11861244,11861244,-2147483640,-1,0,1,1,2,2,30,30,30,0,0
+ 
+[Events]
+Format: Marked, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: Marked=0,0:00:01.18,0:00:06.85,DefaultVCD, NTP,0000,0000,0000,,{\pos(400,570)}Like an angel with pity on nobody
+That means:
+
+Script Info: general information about the script: 
+Title 
+Original Script 
+Script Updated By 
+Script Type (useful for compatibility) 
+Collisions (determines the stacking direction of the subtitles when two or more are present with no specific position: if Normal, subtitles are stacked from down to up; if Reverse, they're stacked from up to down, and can leave spaces under them) 
+PlayResX & PlayResY (useful for graphics and subtitle positioning. If only one present, the other is calculated with real video proportions) 
+PlayDepth (determines number of colors) 
+Timer (all timing is multiplied by this percentage, always written with decimal point and four decimal signs. If smaller than 100.0000, subtitles appear faster and sooner than specified. If greater, slower and later) 
+V4 Styles: a "Format:" line, that specifies the meaning of the "Style:" line Fields, and one or plus "Style" lines, specifying the color, position, margins, the "shape" of a normal subtitle when adjusted to a determinated style (see "Events" section below). All boolean options are written as 0 or 1 (0=false, 1=true). Strange features are: 
+PrimaryColour. Subtitle filling color 
+SecondaryColour. If subtitle has karaoke commands, will appear in this color, changing to PrimaryColour. 
+TertiaryColour (OutlineColour in ASS). Border color 
+BackColour. Shadow color 
+MarginL, MarginR. Minimum margins from subtitles to video limits. 
+MarginV. Minimum margin from subtitles to a video limit, that changes with alignment: if top, distances are from video top; if bottom, distances are from video bottom; if centered, this is unused. In all margin parameters, line is normally cut in \n & \N commands and in spaces, when necessary. An optional parameter in Script Info (only available in ASS), WrapStyle, can change this. 
+Outline. Subtitle can be defined with a border, a rectangle or nothing. 
+Shadow. Distance from shadow to subtitle. 
+AlphaLevel. Transparency (0 is null, 255 is total) 
+Encoding. Useful for writing other alphabet characters in ASCII. With Latin characters, this is set to zero. With Japanese characters, it can be set to 128 (ex: ?ио displays Sora kanji). With Hebrew characters, it can be set to 177. 
+Events: the section with the subtitles. Timing and text are here, and it's also able to put special effects and style modifications, with commands with the same syntax: {\letters invoking command(parameters separated by comma)}, like in {\move(80,80,200,200,150,300)}. Strange parameters: 
+Marked. Unused. 
+Effect. There are three available effects for text appearing, all of them substitutable for commands and others. 
+If there is only a parameter, brackets are not used (ex. {\kf89}).
+
+Two exceptions:
+
+Inside braces can be more than one command. Ex. {\bord8\be1} 
+\N and \n commands don't use braces. 
+
+[edit] Advanced SubStation Alpha
+Advanced SubStation Alpha (ASS) is a script for more advanced subtitles than SSA. It is technically SSA v4+. It is able to produce anything from simple texts to manual graphic editing used in karaoke. There are few programs designed to create these scripts. The main feature of ASS is it has more specifications than normal SSA, like in styles programming. For example, the above script changed into ASS:
+
+[Script Info]
+; Script generated by Aegisub
+; http://www.aegisub.net
+Title: Neon Genesis Evangelion - Episode 26 (neutral Spanish)
+Original Script: RoRo
+Script Updated By: version 2.8.01
+ScriptType: v4.00+
+Collisions: Normal
+PlayResY: 600
+PlayDepth: 0
+Timer: 100,0000
+Video Aspect Ratio: 0
+Video Zoom: 6
+Video Position: 0
+ 
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: DefaultVCD, Arial,28,&H00B4FCFC,&H00B4FCFC,&H00000008,&H80000008,-1,0,0,0,100,100,0.00,0.00,1,1.00,2.00,2,30,30,30,0
+ 
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.18,0:00:06.85,DefaultVCD, NTP,0000,0000,0000,,{\pos(400,570)}Like an Angel with pity on nobody
+
+[edit] Editing programs
+Aegisub - Free and open source software. A relatively new editor, focused mostly on typesetting. It works in Windows NT, 2000, XP and Vista, and with limited functionality on Linux, FreeBSD and Mac OS X. Since it has the most extensive and comprehensive manual (which includes tutorials on working with the subtitle format), it also appeals to new users. UTF-8 is properly supported, but beware that not all programs accepting ASS/SSA files can read UTF-8. Unlike SubStation Alpha, it has a video bar and not just an audio bar for presentation of the video clip. 
+VisualSubSync - Freeware subtitling tool with SRT/SSA/ASS support for Windows. 
+subtitleeditor - A tool to edit subtitles for GNU/Linux. (ASS, SSA, SubRip, MicroDVD, MPL2, MPsub, SubViewer 2.0, plain-text, and Adobe Encore DVD formats) 
+Sabbu - Free and open source software, hosted at SourceForge. An advanced SSA/ASS editor, focused mostly on timing. It runs in Windows and Linux. This program is a suitable replacement for the original Substation Alpha, as it is basically a more modern version of it. No longer developed. 
+Sub Station Alpha tool - Freeware, the original tool, which is very outdated and no longer developed, but still a favorite of some. 
+Subtitle Workshop - Freeware. It is not advised because it is not a fully dedicated SSA/ASS editor, because it doesn't follow the strict rules about SSA subtitles, and it erases any style put in with another program. However, unlike SubStation Alpha it has a video bar instead of an audio bar for presentation of the video clip. 
+Subtitle Processor - Free and open source software, hosted at SourceForge. It is feature rich general subtitle editor with good SSA/ASS support. Unicode is supported from version 7.7, UTF-8 is preferred, other encodings are internally converted to UTF-8. 
+Notepad, TextEdit, or other plain text editors - Despite not being the most efficient way to go about it, since ASS/SSA scripts are plain-text, they can be edited directly in any plain text editor. 
+
+[edit] External links
+SSA/ASS documentation 
+SSA/ASS documentation (French) 
+Downloadable complete and revised manual about SSA/ASS 
+Downloadable complete and revised manual about SSA/ASS, gzipped PostScript file 
+ASS Quick Reference 
+How to play SSA files 
+Retrieved from "http://en.wikipedia.org/wiki/SubStation_Alpha"

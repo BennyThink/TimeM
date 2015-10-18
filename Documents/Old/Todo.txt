@@ -1,0 +1,22 @@
+============
+检查除错
+热键设置编辑
+NameString+FKey+VCode+Command+CommandString
+自动存盘
+批量输出字幕
+字幕格式扩展
+	SSA
+============
+
+添加制作人员
+
+地址：19.yyets.net
+账户：YYeTs1126Top1
+密码：YYeTsGOD
+端口：2121
+
+冰心 22:05:36
+RMVB最新完成品服务器
+地址：rmvb.yyets2008.net
+端口：8021
+帐户密码请查看 FTP中心

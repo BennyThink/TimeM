@@ -1,0 +1,67 @@
+Syntax:
+
+<parameter>
+[optional]
+<../..> mutually exclusive parameters
+
+Effects:
+
+Scroll up;<y1>;<y2>;<delay>[;fadeawayheight]
+Scroll down;<y1;<y2;<delay>[;fadeawayheight]
+Banner;<delay>[;<lefttoright=0/1>;fadeawaywidth]
+
+Style Modifiers:
+
+\n						soft break (only valid with \q2, gets replaced with soft space in other wrap modes)
+\N						hard break
+\h						hard space
+
+Between {...}:
+
+\b<0/1/weight>					bold
+\i<0/1>						italic
+\u<0/1>						underline
+\s<0/1>						strikeout
+\bord<width>					border
+\shad<depth>					shadow
+\be<0/1>					blur edges
+\fn<name>					font
+\fs<size>					size
+\fsc<x/y><percent>				scale
+\fsp<pixels>					spacing
+\fr[<x/y/z>]<degrees>				rotation
+\fe<charset>					character set
+\c&H<bbggrr>&					primary color
+\<1/2/3/4>c&H<bbggrr>&				primary/secondary/outline/shadow color
+\alpha&H<aa>&					primary alpha
+\<1/2/3/4>a&H<aa>&				primary/secondary/outline/shadow alpha
+\a[n]<alignment>				ssa alignment type (n - numpad layout)
+\k[<f/o>]<duration>				karaoke (f - filled from left to right, o - outline highlighting)
+\K						same as \kf
+\q<0-3>						wrap style (0,3 - even lines, 1 - endofline, 2 - manual)
+\r[<name>]					loads default (or <name>) style
+
+\t([<t1>,<t2>,][<accel>,]<style modifiers>) 	animation, accel: 0->1 slowing, 1->.. accelerating
+
+\move(<x1>,<y1>,<x2>,<y2>[,<t1>,<t2>])
+\pos(<x>,<y>)
+\org(<x>,<y>)					changes the origin of the transformations (scaling, rotation), always use \pos instead of \org to manually position the subs
+\fade(<a1>,<a2>,<a3>,<t1>,<t2>,<t3>,<t4>)	fadein: t1 -> t2, fadeout: t3 -> t4
+\fad(<t1>,<t2>)					fadein: start -> start+t1, fadeout: end-t2 -> end
+\clip(<x1>,<y1>,<x2>,<y2>)			clips drawing outside the given rectangle
+\clip([<scale>,]<some drawings>)		clips by intersecting with the drawn shape
+
+Drawings:
+
+\p<0/1/..>					turns on/off drawing mode (0 - off, 1.. - on)
+\pbo<y>						baseline offset
+
+Between {\p<1/..>} and {\p0}:
+
+m <x> <y>					move to 
+n <x> <y>					move to (doesn't close)
+l <x> <y>					line to
+b <x1> <y1> <x2> <y2> <x3> <y3>			bezier to
+s <x1> <y1> <x2> <y2> <x3> <y3> .. <xN> <yN>	b-spline to (uniform)
+p <x> <y>					extend b-spline
+c						close b-spline

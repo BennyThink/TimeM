@@ -1,0 +1,196 @@
+BODY.page-Main_Page #deleteconfirm {
+	DISPLAY: none! important
+}
+BODY.page-Portal_Wikipedia #deleteconfirm {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page #t-cite {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page #lastmod {
+	DISPLAY: none! important
+}
+BODY.page-Portal_Wikipedia #lastmod {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page #siteSub {
+	DISPLAY: none! important
+}
+BODY.page-Portal_Wikipedia #siteSub {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page #contentSub {
+	DISPLAY: none! important
+}
+BODY.page-Portal_Wikipedia #contentSub {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page H1.firstHeading {
+	DISPLAY: none! important
+}
+BODY.page-Portal_Wikipedia H1.firstHeading {
+	DISPLAY: none! important
+}
+#siteNotice {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: -0.5em
+}
+#mw-dismissable-notice {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#content {
+	BACKGROUND-COLOR: #f8fcff
+}
+#p-cactions LI A:hover {
+	BACKGROUND-COLOR: #f8fcff
+}
+#p-cactions LI.selected A {
+	BACKGROUND-COLOR: #f8fcff
+}
+#content DIV.thumb {
+	BACKGROUND-COLOR: #f8fcff
+}
+#p-cactions LI A {
+	BACKGROUND-COLOR: #f7f9fb
+}
+.ns-0 #content {
+	BACKGROUND-COLOR: white
+}
+.ns-0 #p-cactions LI A:hover {
+	BACKGROUND-COLOR: white
+}
+.ns-0 #p-cactions LI.selected A {
+	BACKGROUND-COLOR: white
+}
+.ns-0 #content DIV.thumb {
+	BACKGROUND-COLOR: white
+}
+.ns-0 #p-cactions LI A {
+	BACKGROUND-COLOR: #fbfbfb
+}
+
+@media Print    
+{
+#content {
+	BACKGROUND: white
+}
+    }
+#mw-subcategories TABLE {
+	BACKGROUND-COLOR: transparent
+}
+#mw-pages TABLE {
+	BACKGROUND-COLOR: transparent
+}
+TABLE.diff {
+	BACKGROUND-COLOR: transparent
+}
+TD.diff-otitle {
+	BACKGROUND-COLOR: transparent
+}
+TD.diff-ntitle {
+	BACKGROUND-COLOR: transparent
+}
+#p-cactions #ca-addsection A {
+	PADDING-RIGHT: 0.8em; PADDING-LEFT: 0.8em
+}
+#content BLOCKQUOTE {
+	FONT-SIZE: 93.75%; MARGIN: 1em 1.6em
+}
+#content BLOCKQUOTE P {
+	
+}
+#siteSub {
+	DISPLAY: inline; FONT-WEIGHT: normal; FONT-SIZE: 92%
+}
+#ca-edit A {
+	FONT-WEIGHT: bold! important
+}
+.diffchange {
+	FONT-WEIGHT: bold
+}
+TD.diff-addedline {
+	FONT-SIZE: 85%; VERTICAL-ALIGN: top
+}
+TD.diff-deletedline {
+	FONT-SIZE: 85%; VERTICAL-ALIGN: top
+}
+TD.diff-context {
+	FONT-SIZE: 85%; VERTICAL-ALIGN: top
+}
+#pt-login {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%
+}
+P.error {
+	FONT-WEIGHT: bold
+}
+UNKNOWN {
+	MARGIN-TOP: 0.5em
+}
+.toccolours {
+	BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 95%; PADDING-BOTTOM: 5px; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #aaa 1px solid; BACKGROUND-COLOR: #f9f9f9
+}
+.portlet A {
+	TEXT-DECORATION: none
+}
+#editpage-specialchars A {
+	TEXT-DECORATION: none
+}
+.portlet A:hover {
+	TEXT-DECORATION: underline
+}
+#editpage-specialchars A:hover {
+	TEXT-DECORATION: underline
+}
+DIV.topicon {
+	DISPLAY: block! important; Z-INDEX: 100; POSITION: absolute; TOP: 10px
+}
+#coordinates {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; FONT-SIZE: 85%; Z-INDEX: 1; RIGHT: 30px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: right; PADDING-BOTTOM: 0em; MARGIN: 0em; TEXT-TRANSFORM: none; BORDER-TOP-STYLE: none; TEXT-INDENT: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0em; BORDER-RIGHT-STYLE: none; WHITE-SPACE: nowrap; BORDER-LEFT-STYLE: none; POSITION: absolute; TOP: 3.7em; TEXT-ALIGN: right; BORDER-BOTTOM-STYLE: none
+}
+.portlet LI {
+	LIST-STYLE-IMAGE: url(http://upload.wikimedia.org/wikipedia/en/1/18/Monobook-bullet.png)
+}
+LI.FA {
+	LIST-STYLE-IMAGE: url(http://upload.wikimedia.org/wikipedia/en/d/d4/Monobook-bullet-star.png)
+}
+.infobox {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; COLOR: black; BORDER-BOTTOM: #aaa 1px solid; BACKGROUND-COLOR: #f9f9f9
+}
+.bordered TD {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid
+}
+.bordered TH {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid
+}
+.bordered .mergedtoprow TD {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid
+}
+.bordered .mergedtoprow TH {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid
+}
+.bordered .mergedrow TD {
+	BORDER-RIGHT: #aaa 1px solid
+}
+.bordered .mergedrow TH {
+	BORDER-RIGHT: #aaa 1px solid
+}
+DIV.thumb DIV A IMG {
+	BACKGROUND-COLOR: #fff
+}
+DIV.thumb {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+DIV.tright {
+	MARGIN: 0.5em 0px 0.8em 1.4em; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+DIV.tleft {
+	MARGIN: 0.5em 1.4em 0.8em 0px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+UNKNOWN {
+	COLOR: #002bb8! important
+}
+UNKNOWN {
+	LIST-STYLE-TYPE: none
+}
+UL.permissions-errors {
+	MARGIN: 0px
+}

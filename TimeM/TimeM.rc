@@ -1,0 +1,1541 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TimeM.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""          // 标准组件\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""               // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TimeM.ico"
+IDR_TimeMTYPE           ICON                    "res\\TimeMDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_LISTCHK         BITMAP                  "res\\TreeChk.bmp"
+IDB_BMP_LOGOABOUT       BITMAP                  "res\\TimeMLOGO.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\mainfram.bmp"
+IDB_BMP_TASKS           BITMAP                  "res\\TaskIcons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_VIDEO_OPEN
+    SEPARATOR
+    BUTTON      ID_VIDEO_BACK1S
+    BUTTON      ID_VIDEO_FORWARD1S
+    BUTTON      ID_VIDEO_BACK5S
+    BUTTON      ID_VIDEO_FORWARD5S
+    SEPARATOR
+    BUTTON      ID_VIDEO_STEPONE
+    BUTTON      ID_VIDEO_SYNCTITLE
+    SEPARATOR
+    BUTTON      ID_TITLE_SNAPLINE
+    BUTTON      ID_TITLE_SNAPAFTER
+    BUTTON      ID_TITLE_SNAPALL
+    SEPARATOR
+    BUTTON      ID_TITLE_SNAPLINESTART
+    BUTTON      ID_TITLE_SNAPLINEEND
+    SEPARATOR
+    BUTTON      ID_TITLE_INSERT
+    BUTTON      ID_TITLE_MULTIINSERT
+    SEPARATOR
+    BUTTON      ID_OPTION_AUTOSAVE
+    BUTTON      ID_HIDE_ASSCODE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_EDIT MENU 
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_THEME_MENU MENU 
+BEGIN
+    MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&Silver Style)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建字幕(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开字幕(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "导入翻译稿(&i)",                   ID_FILE_IMPORT
+        MENUITEM "追加字幕(&p)",                    ID_FILE_APPEND
+        MENUITEM SEPARATOR
+        MENUITEM "保存字幕(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM "文件分割另存...",                   32988
+        MENUITEM "批量导出多版本(&E)...",              ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)\tAlt+F4",              ID_APP_EXIT
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        MENUITEM "软件选项(&O)",                    ID_OPTION_SETTINGS
+    END
+    POPUP "字幕发布站"
+    BEGIN
+        MENUITEM "人人影视字幕站",                     ID_SUBTITLE_REL1
+        MENUITEM "射手字幕站",                       ID_SUBTITLE_REL2
+        MENUITEM "TLF字幕站",                      ID_SUBTITLE_REL3
+        MENUITEM "法国美剧字幕站",                     ID_SUBTITLE_REL4
+        MENUITEM "DivX英文字幕站",                   ID_SUBTITLE_REL5
+        MENUITEM "Unimatrix-One 多国语言字幕站",       ID_SUBTITLE_REL6
+        MENUITEM "http://dvd.box.sk/",          ID_SUBTITLE_REL7
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "YYeTs人人影视网站(&H)",             ID_HELP_HOME
+        MENUITEM "意见反馈",                        ID_HELP_UPLOAD
+        MENUITEM SEPARATOR
+        MENUITEM "使用教程(&L)",                    ID_HELP_LESSON
+        MENUITEM SEPARATOR
+        MENUITEM "关于 Time Machine(&A)...",      ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_CBLISTCONTEXT MENU 
+BEGIN
+    POPUP "_POPCONTEXT"
+    BEGIN
+        MENUITEM "自定义拆分",                       ID_TITLE_BREAKBYUSER
+        MENUITEM "合并为单行显示",                     ID_TITLE_CBONELINE
+        MENUITEM "合并为多行显示",                     ID_TITLE_CBMULTILINE
+        MENUITEM SEPARATOR
+        MENUITEM "删除行",                         ID_TITLE_DELETE
+    END
+END
+
+IDR_MENU_LISTCONTEXT MENU 
+BEGIN
+    POPUP "_POPCONTEXT"
+    BEGIN
+        MENUITEM "插入单行字幕",                      ID_TITLE_INSERT
+        MENUITEM "插入多行字幕",                      ID_TITLE_MULTIINSERT
+        MENUITEM "平移时间",                        ID_TITLE_MOVETIME
+        MENUITEM "对齐播放器时间(仅当前行)",               ID_TITLE_SNAPLINE
+        MENUITEM "对齐播放器时间(当前行之后)",              ID_TITLE_SNAPAFTER
+        MENUITEM "对齐播放器时间(所有行)",                ID_TITLE_SNAPALL
+        MENUITEM SEPARATOR
+        MENUITEM "自定义拆分",                       ID_TITLE_BREAKBYUSER
+        MENUITEM "合并为单行显示",                     ID_TITLE_CBONELINE
+        MENUITEM "合并为多行显示",                     ID_TITLE_CBMULTILINE
+        MENUITEM SEPARATOR
+        MENUITEM "删除行",                         ID_TITLE_DELETE
+        MENUITEM "仅时间清零",                       ID_TITLE_ZEROTIME
+        MENUITEM "仅内容清空",                       ID_TITLE_EMPTYCONTENT
+        MENUITEM SEPARATOR
+        MENUITEM "撤消(&U)",                      ID_EDIT_UNDO
+        MENUITEM "重做(R)",                       ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)",                      ID_EDIT_CUT
+        MENUITEM "复制(&C)",                      ID_EDIT_COPY
+        MENUITEM "粘贴(&P)",                      ID_EDIT_PASTE
+        MENUITEM "全选(&S)",                      ID_EDIT_SELECT_ALL
+    END
+END
+
+IDR_MENU_COMBINE_EXT MENU 
+BEGIN
+    POPUP "_"
+    BEGIN
+        MENUITEM "合并所有行",                       ID_CB_ALL
+        MENUITEM "合并...",                       ID_CB_FROMTO
+    END
+END
+
+IDR_TimeMTYPE MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建字幕(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开字幕(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "导入翻译稿(&i)",                   ID_FILE_IMPORT
+        MENUITEM "追加字幕(&p)",                    ID_FILE_APPEND
+        MENUITEM SEPARATOR
+        MENUITEM "保存字幕(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM "文件分割另存...",                   32988
+        MENUITEM "导出MAC UTF8格式",                ID_FILE_EXPORTFU
+        MENUITEM "批量导出多版本(&E)...",              ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)\tAlt+F4",              ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM "重做(R)\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "全选(&S)\tCtrl+A",              ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "查找(&F)\tCtrl+F",              ID_EDIT_FIND
+        MENUITEM "查找下一个(&F)\tF3",               ID_EDIT_FINDNEXT
+        MENUITEM "替换(&R)\tCtrl+H",              ID_EDIT_REPLACE
+        POPUP "排序"
+        BEGIN
+            MENUITEM "按开始时间",                       ID_EDIT_SORTSTART
+            MENUITEM "按结束时间",                       ID_EDIT_SORTEND
+            MENUITEM "按内容",                         ID_EDIT_SORTCONTENT
+            MENUITEM "按字符长度",                       ID_EDIT_SORTLEN
+        END
+        POPUP "标记"
+        BEGIN
+            MENUITEM "标记\tCtrl+F2",                 ID_EDIT_MARK
+            MENUITEM "跳转到标记\tF2",                   ID_EDIT_GOTOMARK
+            MENUITEM "跳转到前一个标记\tShift+F2",          ID_EDIT_GOTOPREVMARK
+        END
+    END
+    POPUP "字幕(&I)"
+    BEGIN
+        MENUITEM "插入单行字幕",                      ID_TITLE_INSERT
+        MENUITEM "插入多行字幕",                      ID_TITLE_MULTIINSERT
+        MENUITEM "自定义拆分",                       ID_TITLE_BREAKBYUSER
+        POPUP "行合并"
+        BEGIN
+            MENUITEM "合并为单行显示",                     ID_TITLE_CBONELINE
+            MENUITEM "合并为多行显示",                     ID_TITLE_CBMULTILINE
+        END
+        MENUITEM "字幕行合并为单行",                    ID_TITLE_SINGLELINETITLE
+        MENUITEM SEPARATOR
+        MENUITEM "删除",                          ID_TITLE_DELETE
+        MENUITEM "删除...",                       32966
+        MENUITEM "时间清零",                        ID_TITLE_ZEROTIME
+        MENUITEM "内容清空",                        ID_TITLE_EMPTYCONTENT
+        MENUITEM SEPARATOR
+        MENUITEM "平移时间",                        ID_TITLE_MOVETIME
+        POPUP "对齐到当前播放器时间"
+        BEGIN
+            MENUITEM "自动模式\tCtrl+Shift+A",          ID_TITLE_AUTOSNAP
+            MENUITEM "下一个\tTab",                    ID_TITLE_SNAPNEXT
+            MENUITEM SEPARATOR
+            MENUITEM "当前行的开始\tF8",                  ID_TITLE_SNAPLINESTART
+            MENUITEM "当前行的结束\tF9",                  ID_TITLE_SNAPLINEEND
+            MENUITEM SEPARATOR
+            MENUITEM "仅当前行",                        ID_TITLE_SNAPLINE
+            MENUITEM "当前行之后",                       ID_TITLE_SNAPAFTER
+            MENUITEM "所有行",                         ID_TITLE_SNAPALL
+            MENUITEM SEPARATOR
+            MENUITEM "至上一个前标记",                     ID_TITLE_SNAPPREVMARK
+            MENUITEM "前后标记中对齐",                     ID_TITLE_SNAPBETWEENTWOMARK
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "25FPS转换为23.976FPS",           ID_TITLE_FROM25FPS
+        MENUITEM "23.976FPS转换为25FPS",           ID_TITLE_TO25FPS
+        MENUITEM "延长显示",                        ID_TITLE_EXTEND
+        MENUITEM "交换上下行",                       ID_TITLE_EXCHANGE
+        MENUITEM SEPARATOR
+        MENUITEM "上一行\tCtrl+PageUp",            ID_TITLE_PREVLINE
+        MENUITEM "下一行\tCtrl+PageDn",            ID_TITLE_NEXTLINE
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "CC字幕处理",                      ID_TOOL_PREPROC
+        MENUITEM "合并精轴",                        ID_TOOL_CMBYTIME
+        MENUITEM "双语字幕合并",                      ID_TOOL_CMBYUSER
+        MENUITEM "添加制作人员",                      ID_TOOL_ADDAUTHOR
+        MENUITEM SEPARATOR
+        MENUITEM "字幕对比",                        ID_TOOL_COMPARE
+        MENUITEM "检查除错",                        ID_TOOL_CHECK
+    END
+    POPUP "视频(&V)"
+    BEGIN
+        MENUITEM "打开",                          ID_VIDEO_OPEN
+        MENUITEM "播放/暂停",                       ID_VIDEO_PLAY_PAUSE
+        MENUITEM "停止",                          ID_VIDEO_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "前进1秒",                        ID_VIDEO_FORWARD1S
+        MENUITEM "后退1秒",                        ID_VIDEO_BACK1S
+        MENUITEM "前进5秒",                        ID_VIDEO_FORWARD5S
+        MENUITEM "后退5秒",                        ID_VIDEO_BACK5S
+        MENUITEM "前进1帧",                        ID_VIDEO_STEPONE
+        MENUITEM SEPARATOR
+        MENUITEM "字幕同步",                        ID_VIDEO_SYNCTITLE
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        MENUITEM "软件选项(&O)",                    ID_OPTION_SETTINGS
+        MENUITEM "设置查看SSA/ASS",                 ID_OPTIONS_ASSSETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "隐藏特效代码",                      ID_HIDE_ASSCODE
+        MENUITEM "自动保存",                        ID_OPTION_AUTOSAVE
+    END
+    POPUP "字幕发布站"
+    BEGIN
+        MENUITEM "人人影视字幕站",                     ID_SUBTITLE_REL1
+        MENUITEM "射手字幕站",                       ID_SUBTITLE_REL2
+        MENUITEM "TLF字幕站",                      ID_SUBTITLE_REL3
+        MENUITEM "法国美剧字幕站",                     ID_SUBTITLE_REL4
+        MENUITEM "DivX英文字幕站",                   ID_SUBTITLE_REL5
+        MENUITEM "Unimatrix-One 多国语言字幕站",       ID_SUBTITLE_REL6
+        MENUITEM "http://dvd.box.sk/",          ID_SUBTITLE_REL7
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "YYeTs人人影视网站(&H)",             ID_HELP_HOME
+        MENUITEM "意见反馈",                        ID_HELP_UPLOAD
+        MENUITEM SEPARATOR
+        MENUITEM "使用教程(&L)",                    ID_HELP_LESSON
+        MENUITEM SEPARATOR
+        MENUITEM "关于 Time Machine(&A)...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_NEXT,        ID_TITLE_NEXTLINE,      VIRTKEY, CONTROL, NOINVERT
+    VK_PRIOR,       ID_TITLE_PREVLINE,      VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_TimeMTYPE ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_EDIT_FINDNEXT,       VIRTKEY, NOINVERT
+    VK_F2,          ID_EDIT_GOTOMARK,       VIRTKEY, NOINVERT
+    VK_F2,          ID_EDIT_GOTOPREVMARK,   VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_EDIT_MARK,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "A",            ID_TITLE_AUTOSNAP,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DELETE,      ID_TITLE_DELETE,        VIRTKEY, NOINVERT
+    VK_NEXT,        ID_TITLE_NEXTLINE,      VIRTKEY, CONTROL, NOINVERT
+    VK_PRIOR,       ID_TITLE_PREVLINE,      VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          ID_TITLE_SNAPLINEEND,   VIRTKEY, NOINVERT
+    VK_F8,          ID_TITLE_SNAPLINESTART, VIRTKEY, NOINVERT
+    VK_SPACE,       ID_TITLE_SNAPNEXT,      VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2009,3,21,101
+ PRODUCTVERSION 0,37,0,101
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "作者:李洪义(Holly)"
+            VALUE "CompanyName", "人人影视"
+            VALUE "FileDescription", "人人影视工作人员内部工具"
+            VALUE "FileVersion", "2009, 3, 21, 101"
+            VALUE "InternalName", "TimeM.exe"
+            VALUE "LegalCopyright", "人人影视网站及作者，保留所有权利。"
+            VALUE "OriginalFilename", "TimeM.exe"
+            VALUE "ProductName", "TimeM字幕工具"
+            VALUE "ProductVersion", "0, 37, 0, 101"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_DLG_CHECKVALID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 397
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DLG_CMBN_DOC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 514
+        VERTGUIDE, 259
+        VERTGUIDE, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 346
+        HORZGUIDE, 37
+        HORZGUIDE, 323
+    END
+
+    IDD_DLG_COMPARETITLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 514
+        VERTGUIDE, 259
+        VERTGUIDE, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 347
+        HORZGUIDE, 33
+        HORZGUIDE, 325
+    END
+
+    IDD_DLG_CPSEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_DLG_EXPORTOPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_DLG_EXTRATIME_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_DLG_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_DLG_FIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_DLG_IMPORTOPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 18
+        RIGHTMARGIN, 179
+        TOPMARGIN, 14
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DLG_INSERTCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_DLG_LISTINTERVAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 397
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_DLG_MIN_INTERVAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_DLG_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_DLG_REPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_DLG_SPLITFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_DLG_SPLITTITLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_DLG_ANYSPLITTITLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_DLG_SSASETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DLG_TIME_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_DLG_TITLECOMBINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 538
+        VERTGUIDE, 271
+        VERTGUIDE, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 352
+        HORZGUIDE, 36
+        HORZGUIDE, 52
+        HORZGUIDE, 329
+    END
+
+    IDD_PLAYER_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 1
+    END
+
+    IDD_TITLE_FORM, DIALOG
+    BEGIN
+        VERTGUIDE, 3
+    END
+
+    IDD_DLG_SAVESETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_DLG_RANGETITLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 206, 213
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TimeM"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Time Machine.\r\nVersion 0, 37, 0, 101",IDC_STATIC,116,29,83,20,SS_NOPREFIX
+    DEFPUSHBUTTON   "确定",IDOK,149,191,50,14,WS_GROUP
+    CONTROL         157,IDC_STATIC,"Static",SS_BITMAP,7,7,99,42
+    EDITTEXT        IDC_EDIT_CRTEXT,7,53,192,128,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DLG_CHECKVALID DIALOGEX 0, 0, 404, 169
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "检查除错"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "检查项目",IDC_STATIC,7,7,199,134
+    CONTROL         "",IDC_BUTTON1,"Button",BS_OWNERDRAW | WS_TABSTOP,14,16,12,11
+    CONTROL         "文字长度",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,17,101,10
+    LTEXT           "全角汉字大于",IDC_STATIC,39,31,49,8
+    EDITTEXT        IDC_EDIT1,95,27,18,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "个",IDC_STATIC,116,31,9,8
+    CONTROL         "",IDC_BUTTON2,"Button",BS_OWNERDRAW | WS_TABSTOP,14,45,12,11
+    CONTROL         "开始时间大于结束时间",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,46,96,10
+    CONTROL         "",IDC_BUTTON3,"Button",BS_OWNERDRAW | WS_TABSTOP,14,59,12,11
+    CONTROL         "时间轴重叠(此项检查需要字幕按时间排序)",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,61,165,10
+    CONTROL         "",IDC_BUTTON4,"Button",BS_OWNERDRAW | WS_TABSTOP,14,74,12,11
+    CONTROL         "空时间轴",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,75,48,10
+    CONTROL         "",IDC_BUTTON5,"Button",BS_OWNERDRAW | WS_TABSTOP,14,88,12,11
+    CONTROL         "时间轴长度大于",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,89,68,10
+    EDITTEXT        IDC_EDIT2,95,87,51,14,ES_AUTOHSCROLL
+    LTEXT           "时:分:秒,毫秒",IDC_STATIC,149,90,49,8
+    CONTROL         "",IDC_BUTTON6,"Button",BS_OWNERDRAW | WS_TABSTOP,14,102,12,11
+    CONTROL         "时间轴长度小于",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,103,68,10
+    EDITTEXT        IDC_EDIT3,95,101,51,14,ES_AUTOHSCROLL
+    LTEXT           "时:分:秒,毫秒",IDC_STATIC,149,104,49,8
+    CONTROL         "",IDC_BUTTON7,"Button",BS_OWNERDRAW | WS_TABSTOP,14,115,12,11
+    CONTROL         "字幕行数超过",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,116,64,10
+    EDITTEXT        IDC_EDIT4,95,115,18,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "行",IDC_STATIC,116,117,9,8
+    DEFPUSHBUTTON   "检查",IDOK,7,148,32,14
+    PUSHBUTTON      "选择所有结果行",IDC_BTN_SELALL,43,148,67,14
+    PUSHBUTTON      "自动消除重叠",IDC_BTN_CLEAROVERLAP,114,148,57,14
+    PUSHBUTTON      "关闭",IDCANCEL,174,148,32,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,212,7,185,155
+END
+
+IDD_DLG_CMBN_DOC DIALOGEX 0, 0, 521, 353
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "合并精轴"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "选择字幕的时间轴文件:",IDC_STATIC,7,14,252,8
+    EDITTEXT        IDC_EDIT_FILESTD,7,23,232,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_BROWSTD,240,23,19,14
+    CONTROL         "",IDC_LIST_STDTITLE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,37,252,286
+    LTEXT           "选择字幕的翻译稿:",IDC_STATIC,262,14,252,8
+    EDITTEXT        IDC_EDIT_FILETRANS,262,23,231,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_BROWTRANS,494,23,20,14
+    CONTROL         "",IDC_LIST_TRANSTITLE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,262,37,252,286
+    PUSHBUTTON      "跳转到时间轴空行",IDC_BTN_TO_LEFTEMPTY,7,332,77,14
+    PUSHBUTTON      "跳转到翻译空行",IDC_BTN_TO_RIGHTEMPTY,88,332,77,14
+    PUSHBUTTON      "焦点行对齐",IDC_BTN_SNAPSEL,170,332,50,14
+    PUSHBUTTON      "自动对齐",IDC_BTN_SNAPAUTO,225,332,50,14
+    CONTROL         "左右窗口同步",IDC_CHK_SYNCSCROLL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,284,336,64,10
+    DEFPUSHBUTTON   "合并",IDOK,358,332,50,14
+    PUSHBUTTON      "保存",IDSAVE,411,332,50,14
+    PUSHBUTTON      "退出",IDCANCEL,464,332,50,14
+END
+
+IDD_DLG_COMPARETITLE DIALOGEX 0, 0, 521, 354
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "字幕对比"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "退出",IDCANCEL,464,333,50,14
+    LTEXT           "选择第一个要比较的字幕文件:",IDC_STATIC,7,10,252,8
+    EDITTEXT        IDC_EDIT_FILESTD,7,19,232,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_BROWSTD,240,19,19,14
+    CONTROL         "",IDC_LIST_STDTITLE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,33,252,292
+    LTEXT           "选择第二个要比较的字幕文件:",IDC_STATIC,262,10,252,8
+    EDITTEXT        IDC_EDIT_FILETRANS,262,19,231,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_BROWTRANS,494,19,20,14
+    CONTROL         "",IDC_LIST_TRANSTITLE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,262,33,252,292
+    CONTROL         "左右窗口同步",IDC_CHK_SYNCSCROLL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,337,64,10
+    PUSHBUTTON      "焦点行对齐",IDC_BTN_SNAPSEL,398,333,50,14
+END
+
+IDD_DLG_CPSEL DIALOGEX 0, 0, 179, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择输出编码"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "编码:",IDC_STATIC,25,18,20,8
+    COMBOBOX        IDC_CB_CPLIST,50,15,93,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "继续",IDOK,32,39,50,14
+    PUSHBUTTON      "取消",IDCANCEL,98,39,50,14
+END
+
+IDD_DLG_EXPORTOPTION DIALOGEX 0, 0, 312, 254
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导出选项"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "文件格式",IDC_STATIC,7,7,298,122
+    CONTROL         "",IDC_LIST_FILEFMT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,18,241,105
+    CONTROL         "Unicode",IDC_CHK_UNICODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,259,19,41,10
+    PUSHBUTTON      "设置ASS",IDC_BTN_SETASS,7,134,50,14
+    CONTROL         "所有文件压缩打包",IDC_CHK_ZIPPACK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,67,137,80,10
+    GROUPBOX        "不同语言附加文件名",IDC_STATIC,7,153,298,32
+    LTEXT           "英文",IDC_STATIC,16,168,17,8
+    EDITTEXT        IDC_EDIT_ENGNAME,33,166,35,14,ES_AUTOHSCROLL
+    LTEXT           "简体中文",IDC_STATIC,77,168,33,8
+    EDITTEXT        IDC_EDIT_CHSNAME,111,166,35,14,ES_AUTOHSCROLL
+    LTEXT           "繁体中文",IDC_STATIC,158,168,33,8
+    EDITTEXT        IDC_EDIT_CHTNAME,194,166,35,14,ES_AUTOHSCROLL
+    GROUPBOX        "输出文件夹",IDC_STATIC,7,194,298,32
+    EDITTEXT        IDC_EDIT_OUTPATH,14,206,268,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_BROW,282,206,16,14
+    PUSHBUTTON      "确定",IDOK,95,233,50,14
+    PUSHBUTTON      "取消",IDCANCEL,166,233,50,14
+END
+
+IDD_DLG_EXTRATIME_INPUT DIALOGEX 0, 0, 189, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入需要延长的时间"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "选择所选时间轴延长值",IDC_STATIC,7,7,175,79
+    LTEXT           "小时:分:秒,毫秒",IDC_STATIC,23,25,58,11
+    EDITTEXT        IDC_EDIT_TIME_OFFSET,83,23,83,14,ES_AUTOHSCROLL
+    LTEXT           "说明：为了调整时间轴的偏差，对所选择的时间轴全体加上这个时间值。",IDC_STATIC,15,45,158,24
+    DEFPUSHBUTTON   "确定",IDOK,49,95,50,14
+    PUSHBUTTON      "取消",IDCANCEL,132,95,50,14
+END
+
+IDD_DLG_FILTER DIALOGEX 0, 0, 183, 75
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "筛选器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "删除所有空行",IDC_CHK_REMOVEEMPTY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,15,64,10
+    CONTROL         "删除仅包含字符",IDC_CHK_REMOVESPECCHAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,30,69,10
+    EDITTEXT        IDC_EDIT_SPECCHAR,91,28,40,14,ES_AUTOHSCROLL
+    LTEXT           "的行",IDC_STATIC,134,31,17,8
+    DEFPUSHBUTTON   "确定",IDOK,34,54,50,14
+    PUSHBUTTON      "取消",IDCANCEL,99,54,50,14
+END
+
+IDD_DLG_FIND DIALOGEX 0, 0, 231, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "查找内容:",IDC_STATIC,10,10,36,8
+    EDITTEXT        IDC_EDIT_TOFIND,48,7,176,14,ES_AUTOHSCROLL
+    CONTROL         "区分大小写",IDC_CHK_CASESENSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,36,56,10
+    GROUPBOX        "方向",IDC_STATIC,67,25,96,26
+    CONTROL         "向上",IDC_RBTN_UPDIRECT,"Button",BS_AUTORADIOBUTTON,76,36,32,10
+    CONTROL         "向下",IDC_RBTN_DNDIRECT,"Button",BS_AUTORADIOBUTTON,118,36,32,10
+    DEFPUSHBUTTON   "查找下一个",IDOK,174,27,50,14
+    PUSHBUTTON      "取消",IDCANCEL,174,44,50,14
+END
+
+IDD_DLG_IMPORTOPTION DIALOGEX 0, 0, 201, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择翻译导入方式"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,63,50,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,50,50,14
+    CONTROL         "每行识别为一行时间轴",IDC_RBTN_SINGLELINE,"Button",BS_AUTORADIOBUTTON,18,14,96,10
+    CONTROL         "以空行为时间轴切分点",IDC_RBTN_SPLITNULLLINE,"Button",BS_AUTORADIOBUTTON,18,31,96,10
+END
+
+IDD_DLG_INSERTCOUNT DIALOGEX 0, 0, 186, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择插入字幕方式"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "插入行数:",IDC_STATIC,40,10,36,8
+    EDITTEXT        IDC_EDIT_LINECOUNT,81,7,31,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_LINECOUNT,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,113,7,11,14
+    CONTROL         "初始时间长度:",IDC_CHK_INITTIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,28,65,10
+    EDITTEXT        IDC_EDIT_TIME_LEN,81,25,83,14,ES_AUTOHSCROLL
+    LTEXT           "时:分:秒,毫秒",IDC_STATIC,83,41,58,11
+    CONTROL         "空白行",IDC_RBTN_EMPTYLINE,"Button",BS_AUTORADIOBUTTON,35,59,40,10
+    CONTROL         "填充顺序号",IDC_RBTN_SEQFILL,"Button",BS_AUTORADIOBUTTON,81,59,56,10
+    DEFPUSHBUTTON   "确定",IDOK,35,79,50,14
+    PUSHBUTTON      "取消",IDCANCEL,101,79,50,14
+END
+
+IDD_DLG_LISTINTERVAL DIALOGEX 0, 0, 404, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择插入的时间轴"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "插入",IDOK,277,209,50,14
+    PUSHBUTTON      "退出",IDCANCEL,347,209,50,14
+    CONTROL         "",IDC_LIST_INTERVAL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,123,216
+    EDITTEXT        IDC_EDIT_START,181,18,82,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END,307,18,82,14,ES_AUTOHSCROLL
+    LTEXT           "开始时间:",IDC_STATIC,143,21,36,8
+    LTEXT           "结束时间:",IDC_STATIC,269,21,36,8
+    GROUPBOX        "设置插入字幕行",IDC_STATIC,135,7,261,193
+    EDITTEXT        IDC_EDIT_SUBTITLE,143,35,246,158,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DLG_MIN_INTERVAL DIALOGEX 0, 0, 189, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请设定空闲时间段"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "输入列出的空闲时间段的最少长度",IDC_STATIC,7,7,175,64
+    LTEXT           "小时:分:秒,毫秒",IDC_STATIC,23,25,58,11
+    EDITTEXT        IDC_EDIT_TIME_OFFSET,83,23,83,14,ES_AUTOHSCROLL
+    LTEXT           "说明：少于设定值的空闲时间段将列出。",IDC_STATIC,15,45,159,18
+    DEFPUSHBUTTON   "确定",IDOK,28,81,50,14
+    PUSHBUTTON      "取消",IDCANCEL,111,81,50,14
+END
+
+IDD_DLG_OPTIONS DIALOGEX 0, 0, 226, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "字幕选项"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "对齐播放器时的反应时间",IDC_STATIC,7,7,212,49
+    CONTROL         "提前(-)",IDC_RBTN_FORWARD,"Button",BS_AUTORADIOBUTTON,24,19,40,10
+    CONTROL         "延迟(+)",IDC_RBTN_BACK,"Button",BS_AUTORADIOBUTTON,85,19,43,10
+    RTEXT           "小时:分:秒,毫秒",IDC_STATIC,15,35,74,11
+    EDITTEXT        IDC_EDIT_TIME_OFFSET,91,32,68,14,ES_AUTOHSCROLL
+    GROUPBOX        "空白字幕的默认时间轴长",IDC_STATIC,7,58,212,28
+    RTEXT           "小时:分:秒,毫秒",IDC_STATIC,15,70,74,11
+    EDITTEXT        IDC_EDIT_TIME_DEFLEN,91,67,68,14,ES_AUTOHSCROLL
+    GROUPBOX        "指定压缩工具位置(WinRAR)",IDC_STATIC,7,88,212,25
+    EDITTEXT        IDC_EDIT_ZIPTOOL,16,98,182,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_BROWZIPTOOL,198,97,17,14
+END
+
+IDD_DLG_REPLACE DIALOGEX 0, 0, 279, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "替换"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "查找内容:",IDC_STATIC,7,7,36,8
+    EDITTEXT        IDC_EDIT_TARGETTEXT,7,17,133,14,ES_AUTOHSCROLL
+    LTEXT           "替换为:",IDC_STATIC,7,37,28,8
+    EDITTEXT        IDC_EDIT_RESULTTEXT,7,47,133,14,ES_AUTOHSCROLL
+    GROUPBOX        "替换范围",IDC_STATIC,146,7,52,46
+    CONTROL         "选择行",IDC_RBTN_SELECTED,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,153,21,40,10
+    CONTROL         "所有行",IDC_RBTN_ALL,"Button",BS_AUTORADIOBUTTON,153,33,40,10
+    GROUPBOX        "针对内容",IDC_STATIC,205,7,67,46
+    CONTROL         "中文部分",IDC_CHK_INCCHS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,22,48,10
+    CONTROL         "英文部分",IDC_CHK_INCENG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,35,48,10
+    CONTROL         "区分大小写",IDC_CHK_CASESENSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,72,56,10
+    CONTROL         "使用批量替换",IDC_CHK_USEBATCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,70,63,14
+    DEFPUSHBUTTON   "替换",IDOK,222,71,50,14
+    CONTROL         "",IDC_LIST_RPLITEMS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,94,207,119
+    PUSHBUTTON      "加入模板<<",IDC_BTN_ADDITEM,222,103,50,14
+    PUSHBUTTON      "移除>>",IDC_BTN_REMOVE,222,123,50,14
+    PUSHBUTTON      "载入模板",IDC_BTN_LOADTPL,222,173,50,14
+    PUSHBUTTON      "保存模板",IDC_BTN_SAVETPL,222,193,50,14
+    PUSHBUTTON      "关闭模板",IDC_BTN_CLOSETPL,222,213,50,14
+    EDITTEXT        IDC_EDIT_TPLFILE,7,213,207,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DLG_SPLITFILE DIALOGEX 0, 0, 201, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件分割选项"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,39,53,50,14
+    PUSHBUTTON      "取消",IDCANCEL,112,53,50,14
+    LTEXT           "当前文件平均分割为",IDC_STATIC,23,25,73,8
+    EDITTEXT        IDC_EDIT_SPLITNUM,97,23,20,14,ES_AUTOHSCROLL
+    LTEXT           "份保存",IDC_STATIC,119,25,25,8
+END
+
+IDD_DLG_SPLITTITLE DIALOGEX 0, 0, 159, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "拆分字幕行"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,45,79,50,14
+    PUSHBUTTON      "取消",IDCANCEL,102,79,50,14
+    GROUPBOX        "拆分方案",IDC_STATIC,7,7,145,64
+    CONTROL         "每隔",IDC_RBTN_SPLITBYTIME,"Button",BS_AUTORADIOBUTTON,22,46,28,10
+    EDITTEXT        IDC_EDIT_SPLITNUM,51,27,30,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_SPLITNUM,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,72,27,11,14
+    EDITTEXT        IDC_EDIT_SPLITTIME,51,44,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_SPLITTIME,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,80,44,11,14
+    LTEXT           "行",IDC_STATIC,83,29,9,8
+    LTEXT           "毫秒",IDC_STATIC,92,47,17,8
+    CONTROL         "拆为",IDC_RBTN_SPLITBYNUM,"Button",BS_AUTORADIOBUTTON,22,28,28,10
+END
+
+IDD_DLG_ANYSPLITTITLE DIALOGEX 0, 0, 366, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "拆分字幕行"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "时长: ",IDC_STATIC,7,10,21,8
+    LTEXT           "00:00:00,000",IDC_STATIC_TTLEN,32,10,53,8
+    CONTROL         "单语字幕",IDC_RBTN_SINGLANG,"Button",BS_AUTORADIOBUTTON,107,10,48,10
+    CONTROL         "双语字幕",IDC_RBTN_DUALLANG,"Button",BS_AUTORADIOBUTTON,159,10,48,10
+    CONTROL         "点击新增",IDC_CHK_NEW,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,254,7,50,14
+    PUSHBUTTON      "移除拆分点",IDC_BTN_REMOVESPLITOR,309,7,50,14
+    CONTROL         "",IDC_STATIC_FRM,"Static",SS_BLACKFRAME,7,27,352,85
+    DEFPUSHBUTTON   "确定",IDOK,251,121,50,14
+    PUSHBUTTON      "取消",IDCANCEL,309,121,50,14
+END
+
+IDD_DLG_SSASETTINGS DIALOGEX 0, 0, 369, 298
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置SubStation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "[Script Info]",IDC_STATIC_SINFO,7,7,355,79
+    EDITTEXT        IDC_EDIT_SINFO,14,19,341,63,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    GROUPBOX        "[V4 Styles]",IDC_STATIC_SSASTYLES,7,89,355,70
+    EDITTEXT        IDC_EDIT_SSASTYLES,14,101,341,54,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    GROUPBOX        "[Events]",IDC_STATIC_EVENTS,7,163,355,33
+    EDITTEXT        IDC_EDIT_EVENTS,14,175,341,17,ES_AUTOHSCROLL
+    GROUPBOX        "英文行首特效代码",IDC_STATIC_EFFECTCODEPREV,7,200,355,33
+    GROUPBOX        "英文行末特效代码",IDC_STATIC_EFFECTCODEENXT,7,237,355,33
+    DEFPUSHBUTTON   "确定",IDOK,253,277,50,14
+    PUSHBUTTON      "取消",IDCANCEL,312,277,50,14
+    COMBOBOX        IDC_CB_EFFECTPREV,14,212,341,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_EFFECTPOST,14,249,341,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_TIME_INPUT DIALOGEX 0, 0, 189, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择时间值"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "为选择行设置新的开始时间",IDC_STATIC,7,7,175,30
+    LTEXT           "小时:分:秒,毫秒",IDC_STATIC,23,19,58,11
+    EDITTEXT        IDC_EDIT_TIME_OFFSET,83,17,83,14,ES_AUTOHSCROLL
+    GROUPBOX        "选择所选时间轴移动值",IDC_STATIC,7,39,175,70
+    CONTROL         "选择行",IDC_RBTN_SEL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,52,40,10
+    CONTROL         "所有行",IDC_RBTN_ALL,"Button",BS_AUTORADIOBUTTON,14,65,40,10
+    CONTROL         "前后标记行之间所有",IDC_RBTN_MARKS,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,79,88,10
+    CONTROL         "当前行之后所有",IDC_RBTN_AFTER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,93,72,10
+    DEFPUSHBUTTON   "确定",IDOK,35,117,50,14
+    PUSHBUTTON      "取消",IDCANCEL,104,117,50,14
+END
+
+IDD_DLG_TITLECOMBINE DIALOGEX 0, 0, 545, 359
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "字幕合并"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "选择字幕的时间轴文件:",IDC_STATIC,7,14,120,8
+    EDITTEXT        IDC_EDIT_FILESTD,7,22,244,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "编辑",IDC_BTN_EDITSTD,148,38,44,14
+    PUSHBUTTON      "...",IDC_BTN_BROWSTD,252,22,19,14
+    CONTROL         "",IDC_LIST_STDTITLE,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,52,264,277
+    LTEXT           "选择字幕的翻译稿:",IDC_STATIC,274,14,93,8
+    EDITTEXT        IDC_EDIT_FILETRANS,274,22,244,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "编辑",IDC_BTN_EDITTRANS,413,38,44,14
+    PUSHBUTTON      "...",IDC_BTN_BROWTRANS,518,22,20,14
+    CONTROL         "",IDC_LIST_TRANSTITLE,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,274,52,264,277
+    CONTROL         "左右窗口同步",IDC_CHK_SYNCSCROLL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,274,342,64,10
+    PUSHBUTTON      "焦点行对齐",IDC_BTN_SNAPSEL,343,338,50,14
+    PUSHBUTTON      "撤消",ID_BTN_UNDO,7,38,44,14
+    PUSHBUTTON      "重做",ID_BTN_REDO,54,38,44,14
+    PUSHBUTTON      "合并选择行",IDOK,397,338,50,14
+    PUSHBUTTON      "保存",IDSAVE,101,38,44,14
+    DEFPUSHBUTTON   "退出",IDCANCEL,488,338,50,14
+    PUSHBUTTON      "撤消",ID_BTN_UNDO2,274,38,44,14
+    PUSHBUTTON      "重做",ID_BTN_REDO2,320,38,44,14
+    PUSHBUTTON      "保存",IDSAVE2,367,38,44,14
+END
+
+IDD_PLAYER_FORM DIALOGEX 0, 0, 8, 8
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+IDD_TITLE_FORM DIALOGEX 0, 0, 240, 91
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "开始:",IDC_STATIC,3,4,17,8
+    EDITTEXT        IDC_EDIT_START,3,13,58,12,ES_AUTOHSCROLL
+    LTEXT           "结束:",IDC_STATIC,3,27,17,8
+    EDITTEXT        IDC_EDIT_END,3,38,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TITLE,64,3,146,81,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_HSCROLL
+    EDITTEXT        IDC_EDIT_CHARCOUNT,213,3,22,81,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDR_MAINFRAME DIALOGEX 0, 0, 330, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "TODO: 布局对话栏",IDC_STATIC,12,4,300,8
+END
+
+IDD_DLG_SAVESETTING DIALOGEX 0, 0, 226, 131
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "保存"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "所有编辑操作自动存盘",IDC_CHK_AUTOSAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,96,10
+    CONTROL         "自动备份",IDC_CHK_AUTOBAK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,20,48,10
+    EDITTEXT        IDC_EDIT_BAKPATH,64,34,139,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_BROW,203,34,16,14
+    LTEXT           "备份位置:",IDC_STATIC,28,36,36,8
+    EDITTEXT        IDC_EDIT_BAKMAX,64,66,22,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "保留最近",IDC_STATIC,29,68,33,8
+    LTEXT           "份备份",IDC_STATIC,88,68,25,8
+    EDITTEXT        IDC_EDIT_TIMEDELAY,64,50,22,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "每隔",IDC_STATIC,44,52,17,8
+    LTEXT           "分钟",IDC_STATIC,88,53,17,8
+    CONTROL         "关联srt文件",IDC_CHK_SRTASSOCIATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,87,57,10
+    CONTROL         "关联ass文件",IDC_CHK_ASSASSOCIATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,100,59,10
+    CONTROL         "关联ssa文件",IDC_CHK_SSAASSOCIATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,114,59,10
+END
+
+IDD_DLG_RANGETITLE DIALOGEX 0, 0, 197, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择合并行的范围"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,86,53,50,14
+    PUSHBUTTON      "取消",IDCANCEL,140,53,50,14
+    LTEXT           "以翻译稿的行号为准!",IDC_STATIC,15,33,76,8
+    EDITTEXT        IDC_EDIT_FROM,25,14,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_TO,85,14,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "从",IDC_STATIC,15,17,9,8
+    LTEXT           "行至",IDC_STATIC,67,17,17,8
+    LTEXT           "行",IDC_STATIC,127,17,9,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_CPSEL DLGINIT
+BEGIN
+    IDC_CB_CPLIST, 0x403, 5, 0
+0x4e41, 0x4953, "\000" 
+    IDC_CB_CPLIST, 0x403, 8, 0
+0x6e55, 0x6369, 0x646f, 0x0065, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDS_TASKLIST_WND        "快捷任务"
+    IDS_COL_TITLE_NO        "序号"
+    IDS_COL_TITLE_START     "开始时间"
+    IDS_COL_TITLE_END       "结束时间"
+    IDS_COL_TITLE_CONTENT   "字幕内容"
+    IDS_COL_TITLE_CHCOUNT   "字符"
+    IDS_CHKERRINFO1         "中文字符超长"
+    IDS_CHKERRINFO2         "结束时间早于开始时间"
+    IDS_CHKERRINFO3         "开始时间与前一个字幕重叠"
+    IDS_CHKERRINFO4         "时间轴为空"
+    IDS_CHKERRINFO5         "时间轴太长"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Time Machine"
+    IDS_NOZIPSET            "没有指定压缩工具所在路径，现在设置吗？\r\n选择是进行设置，选择否放弃压缩，选择取消放弃导出！"
+    IDR_TimeMTYPE           "Time Machine\n\nTime Machine\nTime Machine Files (*.srt,*.ass,*.ssa)\n.srt;.ass;.ssa\nTimeM.Document\nTimeM.Document"
+    IDS_POS_COLNAME         "位置"
+    IDS_INTERVAL_COLNAME    "间隔时长"
+    IDS_NOMATCHINTERVAL     "没有找到符合条件的间隔，请重新设置间隔条件试试！"
+    IDS_REPLACE_WND         "替换"
+    IDS_INSERTSEQ           "%d空白时间轴"
+    IDS_COL_TITLE_TIMELEN   "时长"
+    IDS_CR_COMMENT          "版权申明：\r\n\t本软件由YYeTs人人影视字幕组开发制作. 版权所有, 任何人在未经授权的情况下不允许擅自反向编译，修改，提取以及散发源代码YYeTs人人影视字幕组保留起诉的权利.\r\n开发团队介绍\r\n开发总监：\r\n\t梁良\r\n功能设计：\r\n\t梁良\r\n\t小D\r\n\tyhchain\r\n程序设计：\r\n\t李洪义\r\n技术顾问：\r\n\tkuti（漫游POPSUB作者）\r\n界面设计：\r\n\t梁良\r\n测试反馈：\r\n\tYYeTs 人人影视美剧翻译组\r\n\tYYeTs 人人影视电影翻译组\r\n\tYYeTs 人人影视日剧翻译组\r\n\tYYeTs 人人影视韩剧翻译组\r\n\tYYeTs 人人影视时间轴组\r\n\tYYeTs 人人影视高清字幕调整组\r\n\tYYeTs 人人影视HR-HDTV组\r\n\tYYeTs 人人影视D2R组\r\n\tYYeTs 人人影视美剧后期组\r\n\tYYeTs 人人影视MP4组\r\n"
+    IDS_NOTMATCHSP          "双语多行的拆分点不匹配，请调整！"
+    IDS_WITHVALIDSPLIT      "行头尾不能有拆分点，请调整正确再继续！"
+    IDS_NOSELITEMFOUND      "没有选择的字幕行可以操作！"
+    IDS_MARKPOSERROR        "没有前后标记行，或者当前行没有在两个标记行之间！"
+    IDS_CURPOSERROR         "没有有效的焦点行，请选择后再操作！"
+    IDS_FOUNDAUTOSAVE       "要打开的目标有自动保存的文件，可能由于软件上一次编辑时异常关闭。\r\n你需要打开上一次的自动备份文件吗？选择是打开自动备份，否继续打开选择的源文件！"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHSTITLEDEFAULT     "中文字幕\r\n"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Time Machine"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+    ID_VIEW_AUTOARRANGE     "以网格方式排列图标。"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "使用小图标显示各项。\n小图标"
+    ID_VIEW_LARGEICON       "使用大图标显示各项。\n大图标"
+    ID_VIEW_LIST            "以列表方式显示各项。\n列表"
+    ID_VIEW_DETAILS         "显示窗口中每一项的相关详细信息。\n详细信息"
+    ID_VIEW_LINEUP          "以网格方式排列图标。"
+    ID_VIEW_BYNAME          "按字母顺序对图标排序。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHKERRINFO6         "时间轴太短"
+    IDS_CHKERRINFO7         "字幕行数过多"
+    IDS_CMDTYPE_FILENAME    "文件"
+    IDS_CMDTYPE_EDITNAME    "编辑"
+    IDS_CMDTYPE_TITLENAME   "字幕"
+    IDS_CMDTYPE_TOOLNAME    "工具"
+    IDS_CMDTYPE_VIDEONAME   "视频"
+    IDS_SEL_SINGLELINE_LR   "请在左右窗口中各选择一条需要手工对齐的字幕！"
+    IDS_NOTFOUND_OTHERS     "没有找到其他时间轴空行！"
+    IDS_TOOLARGEFILE        "文件过大，无法打开!\r\n请联系软件开发作者！"
+    IDS_STATUS_PANE1        "Pane 1"
+    IDS_STATUS_PANE2        "Pane 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+    IDS_REPLTMPL_SAVEPROMPT "模板内容已经修改，是否需要保存？"
+    IDS_DOC_SAVEPROMPT      "原文已经修改，您确定要放弃修改并退出吗？\r\n选择是->退出,否->保存退出,取消->不退出."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AUTOSAVEREADERROR   "打开自动保存文件遇到了错误，仍然为您尝试打开您选择的文件！"
+    IDS_SAVESTDTIPS         "时间轴已经修改，需要先保存再继续吗？\r\n选择是保存，选择否放弃修改，选择取消放弃当前动作！"
+    IDS_SAVETRANSTIPS       "翻译稿已经修改，需要保存再继续吗？\r\n选择是保存，选择否放弃修改，选择取消放弃当前动作！"
+    IDS_COL_TITLE_LINENUM   "行数"
+    IDS_OUTPUT_WND          "字幕编辑窗口"
+    IDS_PROPERTIES_WND      "视频播放"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_MENU           "Edit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_IMPORT          "打开文本翻译文件，并导入为字幕\n导入"
+    ID_FILE_APPEND          "打开另外的字幕文件并追加到当前打开字幕中\n追加"
+    ID_FILE_EXPORT          "导出字幕为其他格式\n导出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SUBTITLE_REL1        "http://sub.yyets.net"
+    ID_SUBTITLE_REL2        "http://shooter.cn/"
+    ID_SUBTITLE_REL3        "http://tlfsubs.eastgame.net/"
+    ID_SUBTITLE_REL4        "http://www.seriessub.com/"
+    ID_SUBTITLE_REL5        "http://www.divxsubtitles.net/"
+    ID_SUBTITLE_REL6        "http://www.sub-titles.net/"
+    ID_SUBTITLE_REL7        "http://dvd.box.sk/"
+    ID_HELP_UPLOAD          "http://www.yyets.net/forum-545-1.html"
+    ID_HELP_HOME            "http://www.yyets.net/"
+    ID_HELP_LESSON          "http://www.yyets.net/forum-545-1.html"
+    ID_FILE_SPLITTO         "将当前文件平均分割保存\n分割另存"
+    ID_OPTION_AUTOSAVE      "编辑操作自动保存\n自动保存所做的修改"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SETTINGS_HOTKEY      "设置软件使用热键\n热键"
+    ID_VIDEO_OPEN           "打开视频文件\n打开视频"
+    ID_VIDEO_CLOSE          "关闭当前视频文件\n关闭"
+    ID_VIDEO_PLAY_PAUSE     "播放或暂停打开的视频\n播放/暂停"
+    ID_VIDEO_STOP           "停止播放当前视频并跳转到原点\n停止播放"
+    ID_VIDEO_BACK1S         "视频后退1秒位置\n后退1秒"
+    ID_VIDEO_FORWARD_S1     "视频前进1秒位置\n前进"
+    ID_VIDEO_FORWARD1S      "视频前进1秒位置\n前进1秒"
+    ID_VIDEO_FORWARD5S      "视频前进5秒位置\n前进5秒"
+    ID_VIDEO_BACK5S         "视频后退5秒位置\n后退5秒"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIDEO_RATE10         "以正常速度10%的速率播放\n10%播放"
+    ID_VIDEO_RATE50         "以正常速度50%的速率播放\n50%播放"
+    ID_VIDEO_RATE100        "以正常速度播放\n正常播放"
+    ID_VIDEO_RATE200        "以正常速度200%的速率播放\n200%播放"
+    ID_VIDEO_RATE400        "以正常速度200%的速率播放\n200%播放"
+    ID_VIDEO_RATEUSER       "以用户选择的速率播放\n播放"
+    ID_VIDEO_STEPONE        "向前跳动1帧\n前进1帧"
+    ID_VIDEO_SYNCTITLE      "按照字幕的时间轴同步视频播放\n同步"
+    ID_TOOL_PREPROC         "字幕预处理，去除无效字符\n字幕处理"
+    ID_TOOL_CMBYTIME        "以指定的字幕为准将翻译字幕合并\n合并精轴"
+    ID_TOOL_CMBYUSER        "以根据内容选择添加合并字幕\n双语合并"
+    ID_TOOL_ADDAUTHOR       "在字幕中自动列出符合时间长度的间隔，由用户选择添加制作人员\n添加制作人员"
+    ID_TOOL_COMPARE         "同时列出两个字幕文件进行对比，列出不同\n字幕对比"
+    ID_TOOL_CHECK           "按照指定的规则检查字幕当中可能的错误\n查错"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TITLE_INSERT         "插入一行空白字幕\n插入单行"
+    ID_TITLE_MULTIINSERT    "插入多行空白字幕\n插入多行"
+    ID_TITLE_EXTEND         "延长选择行的时间轴至临近的下一行开始\n延长时间轴"
+    ID_TITLE_DELETE         "删除选择的字幕行\n删除行"
+    ID_TITLE_EXCHANGE       "交换字幕内容的上下行文字\n交换上下行"
+    ID_TITLE_BREAKBYUSER    "用户自定义输入拆分行数进行拆分\n自定义拆分"
+    ID_TITLE_ZEROTIME       "将所选择的字幕行时间轴清零\n时间清零"
+    ID_TITLE_EMPTYCONTENT   "将所选择的字幕行内容清空\n清空内容"
+    ID_TITLE_MOVETIME       "将所选择的字幕行时间轴平移指定的时长\n平移时间轴"
+    ID_TITLE_CBONELINE      "将选择的多行字幕合并为一行单行显示\n合并为单行"
+    ID_TITLE_CBMULTILINE    "将所选的多行字幕合并成为一行字幕并多行显示\n合并为多行"
+    ID_TITLE_SNAPLINE       "以当前行开始时间与当前播放器时间为准对齐当前行的所有时间\n当前行对齐"
+    ID_TITLE_SNAPAFTER      "以当前行开始时间与当前播放器时间为准对齐当前行以后行的所有时间\n对齐后行"
+    ID_TITLE_SNAPALL        "以当前行开始时间与当前播放器时间为准对齐全部字幕行的所有时间\n对齐所有行"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TITLE_SNAPLINEEND    "以播放器时间对齐当前行的结束时间,并自动跳转下一行\n对齐结束时间"
+    ID_TITLE_SNAPLINESTART  "以播放器时间对齐当前行的开始时间\n对齐开始时间"
+    ID_TITLE_SNAPPREVMARK   "对齐时间轴从最近的上一个标记行到当前行\n对齐至上一个标记"
+    ID_TITLE_SNAPBETWEENTWOMARK "对齐时间轴从最近的上一个标记行到下一个最近的标记行\n对齐两标记行之间所有行"
+    ID_TITLE_TO25FPS        "按23.976FPS到25的精度转换所有时间轴\n转换精度到25FPS"
+    ID_TITLE_FROM25FPS      "按25FPS到23.976的精度转换所有时间轴\n从25FPS转换精度"
+    ID_EDIT_FINDNEXT        "继续查找指定的文本\n查找下一个"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_SORTSTART       "按开始时间的早晚排序\n按开始时间排序"
+    ID_EDIT_SORTEND         "按结束时间的早晚排序\n按结束时间排序"
+    ID_EDIT_SORTCONTENT     "按字幕内容的ASCII大小排序\n按内容排序"
+    ID_EDIT_SORTLEN         "按字幕内容的长度排序\n按长度排序"
+    ID_EDIT_MARK            "标记当前行\n标记"
+    ID_EDIT_GOTOMARK        "跳转到下一个有标记的字幕\n跳转标记"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TITLE_AUTOSNAP       "打开自动对齐模式\n自动模式"
+    ID_TITLE_SNAPNEXT       "从第一行开始按开始时间结束时间自动跳转到下一个\n对齐下一个"
+    ID_OPTION_SETTINGS      "设置软件的使用参数及按键操作设置\n选项设置"
+    ID_DEFAULT_CHARSET      "使用系统默认的字符集显示"
+    ID_BIG5_CHARSET         "使用繁体编码(BIG5)显示内容"
+    ID_GB2312_CHARSET       "使用简体编码(GB2312)显示内容"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OPTIONS_ASSSETTINGS  "查看SSA/ASS格式文件头以及设置特效代码\n设置SSA/ASS"
+    ID_TITLE_PREVLINE       "切换焦点到上一个字幕行\n上一行字幕"
+    ID_TITLE_NEXTLINE       "切换焦点到下一个字幕行\n下一行字幕"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_GOTOPREVMARK    "跳转到前一个有标记的字幕\n跳转标记"
+    ID_TITLE_DELBYCOND      "删除符合条件的字幕行\n条件删除行"
+    ID_TITLE_SINGLELINETITLE "将所选字幕内容转为单行显示"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HIDE_ASSCODE         "不显示ASS/SSA特效代码\n隐藏代码"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_EXPORTFU        "导出字幕为FU格式\n导出"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TimeM.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"          // 标准组件
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"               // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
