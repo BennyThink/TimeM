@@ -31,6 +31,7 @@
 #include "PropertiesWnd.h"
 #include "TitlePaneDlg.h"
 #include "MainFrm.h"
+#include "ObjIdl.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -134,7 +135,7 @@ BEGIN_MESSAGE_MAP(CTimeMDoc, CDocument)
 	ON_COMMAND(ID_FILE_SPLITTO, &CTimeMDoc::OnFileSplitto)
 	ON_COMMAND(ID_OPTION_AUTOSAVE, &CTimeMDoc::OnOptionAutosave)
 	ON_UPDATE_COMMAND_UI(ID_EDIT_REPLACE, &CTimeMDoc::OnUpdateEditReplace)
-	ON_COMMAND(ID_FILE_EXPORTFU, &CTimeMDoc::OnFileExportfu)
+	//ON_COMMAND(ID_FILE_EXPORTFU, &CTimeMDoc::OnFileExportfu)
 END_MESSAGE_MAP()
 
 
@@ -1409,9 +1410,17 @@ void CTimeMDoc::OnVideoFileOpen()
 	if((pPlayer != NULL)
 		&&(pPlayer->OnVideoFileOpen()))
 	{
-//		m_bThdBreak = FALSE;
-//		ResumeThread(m_hSyncThd);
+		//m_bThdBreak = FALSE;
+		//ResumeThread(m_hSyncThd);
 	}
+	//open video
+	
+	
+		
+	
+
+
+
 }
 
 void CTimeMDoc::OnVideoPlayPause()
@@ -3101,9 +3110,10 @@ HACCEL CTimeMDoc::GetDefaultAccelerator()
 	return CDocument::GetDefaultAccelerator();
 }
 
+/*
 void CTimeMDoc::OnFileExportfu()
 {
-	CFile fileWrite;
+	CFile fileWrite; 
 	if(!fileWrite.Open(lpszFileName, CFile::modeWrite|CFile::modeCreate))
 		return;
 
@@ -3144,3 +3154,4 @@ void CTimeMDoc::OnFileExportfu()
 		}
 	}
 }
+*/

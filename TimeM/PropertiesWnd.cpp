@@ -275,11 +275,14 @@ BOOL CPropertiesWnd::OnVideoFileOpen()
 {
 	// TODO: Add your command handler code here
 	// MKV, TS, MP4, RMVB，MPG, MPEG
+	
+	
 	TCHAR szFilter[] = _T("常用媒体格式(*.AVI;*.MKV;*.TS;*.MP4;*.RMVB;*.MPG;*.MPEG)|*.AVI;*.MKV;*.TS;*.MP4;*.RMVB;*.MPG;*.MPEG|All Files (*.*)|*.*||");
 	CFileDialog dlgOpen(TRUE, 0, 0, 0, szFilter);
 	if(IDOK == dlgOpen.DoModal())
 	{
 		m_Player.put_URL(dlgOpen.GetPathName());
+		//MessageBox(m_Player.get_URL());
 		return TRUE;
 	}
 	return FALSE;

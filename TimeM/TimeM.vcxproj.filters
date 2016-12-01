@@ -14,7 +14,7 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="WMPImport">
-      <UniqueIdentifier>{e17273dd-c6b3-462f-90a2-00af8d737f87}</UniqueIdentifier>
+      <UniqueIdentifier>{a722dfc7-5c8a-45e7-a714-6fd82e669fc6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -358,48 +358,52 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\mainfram.bmp">
+    <Image Include="res\mainfram.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\output_wnd.ico">
+    </Image>
+    <Image Include="res\output_wnd.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\output_wnd_hc.ico">
+    </Image>
+    <Image Include="res\output_wnd_hc.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\properties_wnd.ico">
+    </Image>
+    <Image Include="res\properties_wnd.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\properties_wnd_hc.ico">
+    </Image>
+    <Image Include="res\properties_wnd_hc.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\TaskIcons.bmp">
+    </Image>
+    <Image Include="res\TaskIcons.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\TimeM.ico">
+    </Image>
+    <Image Include="res\TimeM.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\TimeM.rc2">
+    </Image>
+    <Image Include="res\TimeMDoc.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\TimeMDoc.ico">
+    </Image>
+    <Image Include="res\TimeMLOGO.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\TimeMLOGO.bmp">
+    </Image>
+    <Image Include="res\TreeChk.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\TreeChk.bmp">
+    </Image>
+    <Image Include="UserImages.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="UserImages.bmp">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="ReadMe.txt" />
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TimeM.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TimeM.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="TimeM.manifest" />

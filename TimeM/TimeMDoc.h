@@ -269,5 +269,6 @@ public:
 	afx_msg void OnOptionAutosave();
 	afx_msg void OnUpdateOptionAutosave(CCmdUI *pCmdUI);
 	afx_msg void OnUpdateEditReplace(CCmdUI *pCmdUI);
-	afx_msg void OnFileExportfu();
+	//afx_msg void OnFileExportfu();
+
 };

@@ -16,13 +16,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Chinese (P.R.C.) resources
+// 中文(简体，中国) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
-#ifdef _WIN32
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 #pragma code_page(936)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -90,7 +88,7 @@ IDB_BMP_TASKS           BITMAP                  "res\\TaskIcons.bmp"
 // Toolbar
 //
 
-IDR_MAINFRAME TOOLBAR  16, 15
+IDR_MAINFRAME TOOLBAR 16, 15
 BEGIN
     BUTTON      ID_VIDEO_OPEN
     SEPARATOR
@@ -122,7 +120,7 @@ END
 // Menu
 //
 
-IDR_POPUP_EDIT MENU 
+IDR_POPUP_EDIT MENU
 BEGIN
     POPUP "Edit"
     BEGIN
@@ -132,7 +130,7 @@ BEGIN
     END
 END
 
-IDR_THEME_MENU MENU 
+IDR_THEME_MENU MENU
 BEGIN
     MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
     MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
@@ -140,7 +138,7 @@ BEGIN
     MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
 END
 
-IDR_MAINFRAME MENU 
+IDR_MAINFRAME MENU
 BEGIN
     POPUP "文件(&F)"
     BEGIN
@@ -206,7 +204,7 @@ BEGIN
     END
 END
 
-IDR_MENU_CBLISTCONTEXT MENU 
+IDR_MENU_CBLISTCONTEXT MENU
 BEGIN
     POPUP "_POPCONTEXT"
     BEGIN
@@ -218,7 +216,7 @@ BEGIN
     END
 END
 
-IDR_MENU_LISTCONTEXT MENU 
+IDR_MENU_LISTCONTEXT MENU
 BEGIN
     POPUP "_POPCONTEXT"
     BEGIN
@@ -247,7 +245,7 @@ BEGIN
     END
 END
 
-IDR_MENU_COMBINE_EXT MENU 
+IDR_MENU_COMBINE_EXT MENU
 BEGIN
     POPUP "_"
     BEGIN
@@ -256,7 +254,7 @@ BEGIN
     END
 END
 
-IDR_TimeMTYPE MENU 
+IDR_TimeMTYPE MENU
 BEGIN
     POPUP "文件(&F)"
     BEGIN
@@ -268,7 +266,6 @@ BEGIN
         MENUITEM "保存字幕(&S)\tCtrl+S",            ID_FILE_SAVE
         MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
         MENUITEM "文件分割另存...",                   32988
-        MENUITEM "导出MAC UTF8格式",                ID_FILE_EXPORTFU
         MENUITEM "批量导出多版本(&E)...",              ID_FILE_EXPORT
         MENUITEM SEPARATOR
         MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
@@ -428,7 +425,7 @@ END
 // Accelerator
 //
 
-IDR_MAINFRAME ACCELERATORS 
+IDR_MAINFRAME ACCELERATORS
 BEGIN
     "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
     "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
@@ -439,7 +436,7 @@ BEGIN
     VK_PRIOR,       ID_TITLE_PREVLINE,      VIRTKEY, CONTROL, NOINVERT
 END
 
-IDR_TimeMTYPE ACCELERATORS 
+IDR_TimeMTYPE ACCELERATORS
 BEGIN
     "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
     VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
@@ -478,7 +475,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2009,3,21,101
+ FILEVERSION 2016,12,1,0
  PRODUCTVERSION 0,37,0,101
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -496,8 +493,8 @@ BEGIN
         BEGIN
             VALUE "Comments", "作者:李洪义(Holly)"
             VALUE "CompanyName", "人人影视"
-            VALUE "FileDescription", "人人影视工作人员内部工具"
-            VALUE "FileVersion", "2009, 3, 21, 101"
+            VALUE "FileDescription", "人人影视工作人员内部工具，重新编译by Benny."
+            VALUE "FileVersion", "2016.12.1.0"
             VALUE "InternalName", "TimeM.exe"
             VALUE "LegalCopyright", "人人影视网站及作者，保留所有权利。"
             VALUE "OriginalFilename", "TimeM.exe"
@@ -518,7 +515,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
@@ -714,6 +711,10 @@ BEGIN
         VERTGUIDE, 3
     END
 
+    IDR_MAINFRAME, DIALOG
+    BEGIN
+    END
+
     IDD_DLG_SAVESETTING, DIALOG
     BEGIN
         LEFTMARGIN, 7
@@ -745,7 +746,7 @@ FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     LTEXT           "Time Machine.\r\nVersion 0, 37, 0, 101",IDC_STATIC,116,29,83,20,SS_NOPREFIX
     DEFPUSHBUTTON   "确定",IDOK,149,191,50,14,WS_GROUP
-    CONTROL         157,IDC_STATIC,"Static",SS_BITMAP,7,7,99,42
+    CONTROL         IDS_OUTPUT_WND,IDC_STATIC,"Static",SS_BITMAP,7,7,99,42
     EDITTEXT        IDC_EDIT_CRTEXT,7,53,192,128,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
 END
 
@@ -1197,7 +1198,7 @@ END
 // String Table
 //
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
     IDS_TASKLIST_WND        "快捷任务"
@@ -1213,9 +1214,9 @@ BEGIN
     IDS_CHKERRINFO5         "时间轴太长"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
-    IDR_MAINFRAME           "Time Machine"
+    IDR_MAINFRAME           "Time Machine "
     IDS_NOZIPSET            "没有指定压缩工具所在路径，现在设置吗？\r\n选择是进行设置，选择否放弃压缩，选择取消放弃导出！"
     IDR_TimeMTYPE           "Time Machine\n\nTime Machine\nTime Machine Files (*.srt,*.ass,*.ssa)\n.srt;.ass;.ssa\nTimeM.Document\nTimeM.Document"
     IDS_POS_COLNAME         "位置"
@@ -1233,18 +1234,18 @@ BEGIN
     IDS_FOUNDAUTOSAVE       "要打开的目标有自动保存的文件，可能由于软件上一次编辑时异常关闭。\r\n你需要打开上一次的自动备份文件吗？选择是打开自动备份，否继续打开选择的源文件！"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_CHSTITLEDEFAULT     "中文字幕\r\n"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_APP_TITLE       "Time Machine"
     AFX_IDS_IDLEMESSAGE     "就绪"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_INDICATOR_EXT        "EXT"
     ID_INDICATOR_CAPS       "CAP"
@@ -1254,7 +1255,7 @@ BEGIN
     ID_INDICATOR_REC        "REC"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_NEW             "创建新文档\n新建"
     ID_FILE_OPEN            "打开现有文档\n打开"
@@ -1263,13 +1264,13 @@ BEGIN
     ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
     ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_MRU_FILE1       "打开此文档"
     ID_FILE_MRU_FILE2       "打开此文档"
@@ -1289,18 +1290,18 @@ BEGIN
     ID_FILE_MRU_FILE16      "打开此文档"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
     ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_EDIT_CLEAR           "清除选定内容\n清除"
     ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
@@ -1315,14 +1316,14 @@ BEGIN
     ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
     ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
     ID_VIEW_AUTOARRANGE     "以网格方式排列图标。"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_SCSIZE          "更改窗口大小"
     AFX_IDS_SCMOVE          "更改窗口位置"
@@ -1333,13 +1334,13 @@ BEGIN
     AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
     AFX_IDS_SCTASKLIST      "激活任务列表"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_VIEW_SMALLICON       "使用小图标显示各项。\n小图标"
     ID_VIEW_LARGEICON       "使用大图标显示各项。\n大图标"
@@ -1349,7 +1350,7 @@ BEGIN
     ID_VIEW_BYNAME          "按字母顺序对图标排序。"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_CHKERRINFO6         "时间轴太短"
     IDS_CHKERRINFO7         "字幕行数过多"
@@ -1369,7 +1370,7 @@ BEGIN
     IDS_DOC_SAVEPROMPT      "原文已经修改，您确定要放弃修改并退出吗？\r\n选择是->退出,否->保存退出,取消->不退出."
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_AUTOSAVEREADERROR   "打开自动保存文件遇到了错误，仍然为您尝试打开您选择的文件！"
     IDS_SAVESTDTIPS         "时间轴已经修改，需要先保存再继续吗？\r\n选择是保存，选择否放弃修改，选择取消放弃当前动作！"
@@ -1379,19 +1380,19 @@ BEGIN
     IDS_PROPERTIES_WND      "视频播放"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_EDIT_MENU           "Edit"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_IMPORT          "打开文本翻译文件，并导入为字幕\n导入"
     ID_FILE_APPEND          "打开另外的字幕文件并追加到当前打开字幕中\n追加"
     ID_FILE_EXPORT          "导出字幕为其他格式\n导出"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_SUBTITLE_REL1        "http://sub.yyets.net"
     ID_SUBTITLE_REL2        "http://shooter.cn/"
@@ -1407,7 +1408,7 @@ BEGIN
     ID_OPTION_AUTOSAVE      "编辑操作自动保存\n自动保存所做的修改"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_SETTINGS_HOTKEY      "设置软件使用热键\n热键"
     ID_VIDEO_OPEN           "打开视频文件\n打开视频"
@@ -1421,7 +1422,7 @@ BEGIN
     ID_VIDEO_BACK5S         "视频后退5秒位置\n后退5秒"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_VIDEO_RATE10         "以正常速度10%的速率播放\n10%播放"
     ID_VIDEO_RATE50         "以正常速度50%的速率播放\n50%播放"
@@ -1439,7 +1440,7 @@ BEGIN
     ID_TOOL_CHECK           "按照指定的规则检查字幕当中可能的错误\n查错"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_TITLE_INSERT         "插入一行空白字幕\n插入单行"
     ID_TITLE_MULTIINSERT    "插入多行空白字幕\n插入多行"
@@ -1457,7 +1458,7 @@ BEGIN
     ID_TITLE_SNAPALL        "以当前行开始时间与当前播放器时间为准对齐全部字幕行的所有时间\n对齐所有行"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_TITLE_SNAPLINEEND    "以播放器时间对齐当前行的结束时间,并自动跳转下一行\n对齐结束时间"
     ID_TITLE_SNAPLINESTART  "以播放器时间对齐当前行的开始时间\n对齐开始时间"
@@ -1468,7 +1469,7 @@ BEGIN
     ID_EDIT_FINDNEXT        "继续查找指定的文本\n查找下一个"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_EDIT_SORTSTART       "按开始时间的早晚排序\n按开始时间排序"
     ID_EDIT_SORTEND         "按结束时间的早晚排序\n按结束时间排序"
@@ -1478,7 +1479,7 @@ BEGIN
     ID_EDIT_GOTOMARK        "跳转到下一个有标记的字幕\n跳转标记"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_TITLE_AUTOSNAP       "打开自动对齐模式\n自动模式"
     ID_TITLE_SNAPNEXT       "从第一行开始按开始时间结束时间自动跳转到下一个\n对齐下一个"
@@ -1488,31 +1489,31 @@ BEGIN
     ID_GB2312_CHARSET       "使用简体编码(GB2312)显示内容"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_OPTIONS_ASSSETTINGS  "查看SSA/ASS格式文件头以及设置特效代码\n设置SSA/ASS"
     ID_TITLE_PREVLINE       "切换焦点到上一个字幕行\n上一行字幕"
     ID_TITLE_NEXTLINE       "切换焦点到下一个字幕行\n下一行字幕"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_EDIT_GOTOPREVMARK    "跳转到前一个有标记的字幕\n跳转标记"
     ID_TITLE_DELBYCOND      "删除符合条件的字幕行\n条件删除行"
     ID_TITLE_SINGLELINETITLE "将所选字幕内容转为单行显示"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_HIDE_ASSCODE         "不显示ASS/SSA特效代码\n隐藏代码"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_EXPORTFU        "导出字幕为FU格式\n导出"
 END
 
-#endif    // Chinese (P.R.C.) resources
+#endif    // 中文(简体，中国) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
