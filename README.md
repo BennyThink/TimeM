@@ -18,7 +18,7 @@ Release下有我编译的文件。如果你不相信我，也可以自行编译�
 
 
 ##联系方式##
-issue、PR
+[发邮件给我](mailto:benny@bennythink.com "邮箱")
 
-##版权、许可证##
+##许可证##
 GPL v3
