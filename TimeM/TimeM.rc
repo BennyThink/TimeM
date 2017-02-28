@@ -475,8 +475,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2016,12,1,0
- PRODUCTVERSION 0,37,0,101
+ FILEVERSION 2017,2,28,0
+ PRODUCTVERSION 0,38,0,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -494,12 +494,12 @@ BEGIN
             VALUE "Comments", "作者:李洪义(Holly)"
             VALUE "CompanyName", "人人影视"
             VALUE "FileDescription", "人人影视工作人员内部工具，重新编译by Benny."
-            VALUE "FileVersion", "2016.12.1.0"
+            VALUE "FileVersion", "2017.2.28.0"
             VALUE "InternalName", "TimeM.exe"
             VALUE "LegalCopyright", "人人影视网站及作者，保留所有权利。"
             VALUE "OriginalFilename", "TimeM.exe"
             VALUE "ProductName", "TimeM字幕工具"
-            VALUE "ProductVersion", "0, 37, 0, 101"
+            VALUE "ProductVersion", "0.38.0.0"
         END
     END
     BLOCK "VarFileInfo"
@@ -744,9 +744,9 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSM
 CAPTION "关于 TimeM"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    LTEXT           "Time Machine.\r\nVersion 0, 37, 0, 101",IDC_STATIC,116,29,83,20,SS_NOPREFIX
+    LTEXT           "Time Machine.\r\nVersion 0, 38, 0, 0",IDC_STATIC,116,29,83,20,SS_NOPREFIX
     DEFPUSHBUTTON   "确定",IDOK,149,191,50,14,WS_GROUP
-    CONTROL         IDS_OUTPUT_WND,IDC_STATIC,"Static",SS_BITMAP,7,7,99,42
+    CONTROL         157,IDC_STATIC,"Static",SS_BITMAP,15,19,69,23
     EDITTEXT        IDC_EDIT_CRTEXT,7,53,192,128,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
 END
 
@@ -1225,7 +1225,7 @@ BEGIN
     IDS_REPLACE_WND         "替换"
     IDS_INSERTSEQ           "%d空白时间轴"
     IDS_COL_TITLE_TIMELEN   "时长"
-    IDS_CR_COMMENT          "版权申明：\r\n\t本软件由YYeTs人人影视字幕组开发制作. 版权所有, 任何人在未经授权的情况下不允许擅自反向编译，修改，提取以及散发源代码YYeTs人人影视字幕组保留起诉的权利.\r\n开发团队介绍\r\n开发总监：\r\n\t梁良\r\n功能设计：\r\n\t梁良\r\n\t小D\r\n\tyhchain\r\n程序设计：\r\n\t李洪义\r\n技术顾问：\r\n\tkuti（漫游POPSUB作者）\r\n界面设计：\r\n\t梁良\r\n测试反馈：\r\n\tYYeTs 人人影视美剧翻译组\r\n\tYYeTs 人人影视电影翻译组\r\n\tYYeTs 人人影视日剧翻译组\r\n\tYYeTs 人人影视韩剧翻译组\r\n\tYYeTs 人人影视时间轴组\r\n\tYYeTs 人人影视高清字幕调整组\r\n\tYYeTs 人人影视HR-HDTV组\r\n\tYYeTs 人人影视D2R组\r\n\tYYeTs 人人影视美剧后期组\r\n\tYYeTs 人人影视MP4组\r\n"
+    IDS_CR_COMMENT          "版权申明：\r\n\t本软件由YYeTs人人影视字幕组开发制作. 版权所有, 任何人在未经授权的情况下不允许擅自反向编译，修改，提取以及散发源代码YYeTs人人影视字幕组保留起诉的权利.\r\n开发团队介绍\r\n开发总监：\r\n\t梁良\r\n功能设计：\r\n\t梁良\r\n\t小D\r\n\tyhchain\r\n程序设计：\r\n\t李洪义\r\n技术顾问：\r\n\tkuti（漫游POPSUB作者）\r\n界面设计：\r\n\t梁良\r\n测试反馈：\r\n\tYYeTs 人人影视美剧翻译组\r\n\tYYeTs 人人影视电影翻译组\r\n\tYYeTs 人人影视日剧翻译组\r\n\tYYeTs 人人影视韩剧翻译组\r\n\tYYeTs 人人影视时间轴组\r\n\tYYeTs 人人影视高清字幕调整组\r\n\tYYeTs 人人影视HR-HDTV组\r\n\tYYeTs 人人影视D2R组\r\n\tYYeTs 人人影视美剧后期组\r\n\tYYeTs 人人影视MP4组\r\n重新编译：\r\n\tBenny 2017"
     IDS_NOTMATCHSP          "双语多行的拆分点不匹配，请调整！"
     IDS_WITHVALIDSPLIT      "行头尾不能有拆分点，请调整正确再继续！"
     IDS_NOSELITEMFOUND      "没有选择的字幕行可以操作！"
@@ -1394,16 +1394,16 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_SUBTITLE_REL1        "http://sub.yyets.net"
-    ID_SUBTITLE_REL2        "http://shooter.cn/"
-    ID_SUBTITLE_REL3        "http://tlfsubs.eastgame.net/"
+    ID_SUBTITLE_REL1        "http://www.yyets.com/"
+    ID_SUBTITLE_REL2        "http://assrt.net/"
+    ID_SUBTITLE_REL3        "http://bbs.eastgame.org/"
     ID_SUBTITLE_REL4        "http://www.seriessub.com/"
     ID_SUBTITLE_REL5        "http://www.divxsubtitles.net/"
     ID_SUBTITLE_REL6        "http://www.sub-titles.net/"
     ID_SUBTITLE_REL7        "http://dvd.box.sk/"
-    ID_HELP_UPLOAD          "http://www.yyets.net/forum-545-1.html"
-    ID_HELP_HOME            "http://www.yyets.net/"
-    ID_HELP_LESSON          "http://www.yyets.net/forum-545-1.html"
+    ID_HELP_UPLOAD          "mailto:zimuzu.tv@gmail.com"
+    ID_HELP_HOME            "http://www.zmz2017.com/"
+    ID_HELP_LESSON          "https://www.bennythink.com/timeline-subtitles.html"
     ID_FILE_SPLITTO         "将当前文件平均分割保存\n分割另存"
     ID_OPTION_AUTOSAVE      "编辑操作自动保存\n自动保存所做的修改"
 END
